@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style/login.css">
+
+
+    <title>Patient Login/Register</title>
+    
+  </head>
+  <body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <div class="header">
+     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #980F5A;">
+            <a class="navbar-brand" href="#" style="color: rgb(255, 255, 255); font-family: cursive; font-size: 40px; font-weight: 400; margin-right: 80px; text-shadow: 2px 2px 5px ;">VitaCure</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+              <ul class="navbar-nav mr-auto" >
+                <li class="nav-item active">
+                  <a class="nav-link" href="main.html" style="padding-right: 15px; color:white; font-size:20px;">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="padding-right: 15px; padding-left: 15px; color:white; font-size:20px;">Doctors</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="padding-right: 15px; padding-left: 15px; color:white; font-size:20px;">Medicines</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="padding-right: 15px; padding-left: 15px; color:white; font-size:20px;">Lab Tests</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"  style="color:white; font-size:20px;">About Us</a>
+                </li>
+                
+              </ul>
+              <form class="form-inline my-2 my-lg-0">           
+                <button class="btn btn-light" style="margin-left:600px; border-radius: 15px 50px; background-color: rgb(250, 243, 245); color: rgb(91, 21, 105);" type="submit">
+                   <a class="nav-link1" href="patLog.html"> Login / Signup </a></button>
+              </form>
+              
+            </div>
+        </nav>
+  </div>
+    <div class="clear"></div>
+    <div id="center" style="margin-top: 70px;">
+        <ul style="list-style-type: none; overflow: hidden;">
+          <li>
+            <a href="docLog.html">Doctor</a>
+          </li>
+          <li style="border-bottom: 2px solid rgb(236, 5, 5);">
+            <a href="#">Patient</a>
+          </li>
+        </ul>
+    </div>
+    
+    <div class="one"  style="margin-top: 50px;">
+    
+        <div class="container" id="container">
+            <div class="form-container sign-up-container">
+                <form class="form" action="PatSign" METHOD="post">
+                    <h1 style="margin-bottom: 20px;">Sign Up</h1>
+                    <input type="text" name="p_name" placeholder="Name" required/>
+                    <input type="email" name="p_email" placeholder="Email" required/>
+                    <input type="password" name="p_pwd" placeholder="Password" required pattern="[a-z A-z 0-9]{8,}" 
+                    title="Password must contain at least one number,one uppercase & lowercase letter, and length should be at least 8" />
+                    <button type="submit" style="margin-top: 20px;" class="button">Sign Up</button>
+                </form>
+            </div>
+            <div class="form-container login-container">
+                <form class="form" action="" METHOD="post">
+                    <h1 style="margin-bottom: 20px;">Login</h1>
+                    <input type="email" name="p_email" placeholder="Email" />
+                    <input type="password"  name="p_pwd" placeholder="Password" />
+                    <a href="#">Forgot your password?</a>
+                    <button type="submit" style="margin-top: 40px;" class="button">Login</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1>Welcome Back!</h1>
+                        <p style="margin: 20px 0 30px;">Kindly login with your personal details</p>
+                        <button class="button2" id="login">Login</button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1 style="margin-bottom: 20px;">New User?</h1>
+                        <p><img src="images/patsignup.jpg" style="border-radius: 50px; width:200px; height:210px;"></p>
+                        <p>Enter your details here!</p>
+                        <button class="button2" id="signUp">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const signUpButton = document.getElementById('signUp');
+            const loginButton = document.getElementById('login');
+            const container = document.getElementById('container');
+
+            signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+            });
+
+            loginButton.addEventListener('click', () => {
+                container.classList.remove("right-panel-active");
+            });
+        </script>
+
+    </div>
+</body>
+</html>
