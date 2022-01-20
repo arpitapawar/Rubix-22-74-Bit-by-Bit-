@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style/details.css">
+  <link rel="stylesheet" href="style/navbar.css">
+  <!-- <link rel="stylesheet" href="styles/doc_style.css" > -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  </head>
+<body>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <header class="header">
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #980F5A;">
+            <a class="navbar-brand" href="#" style="color: rgb(255, 255, 255); font-family: cursive; font-size: 40px; font-weight: 400; margin-right: 80px; text-shadow: 2px 2px 5px ;">VitaCure</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+              <ul class="navbar-nav mr-auto" >
+                <li class="nav-item active">
+                  <a class="nav-link" href="main.html" style="padding-right: 15px; color:white; font-size:20px;">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="padding-right: 15px; padding-left: 15px; color:white; font-size:20px;">Doctors</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="padding-right: 15px; padding-left: 15px; color:white; font-size:20px;">Medicines</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" style="padding-right: 15px; padding-left: 15px; color:white; font-size:20px;">Lab Tests</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"  style="color:white; font-size:20px;">About Us</a>
+                </li>
+                
+              </ul>
+              <form class="form-inline my-2 my-lg-0">           
+                <button class="btn btn-light" style="margin-left:600px; border-radius: 15px 50px; background-color: rgb(250, 243, 245); color: rgb(91, 21, 105);" type="submit">
+                   <a class="nav-link1" href=""> Logout </a></button>
+              </form>
+              
+            </div>
+        </nav>
+  </header>
+  <div class="clear"></div>
+  <div class="one" style="margin-top: 140px;">
+
+      <div class="container" id="container">
+        <form class="form" action="Doc_Acct" method="post" enctype="multipart/form-data">
+          <div class="form-container sign-up-container">
+              
+                  <h1 style="margin: 20px 0px 0 50px;">Details</h1>
+                  <input type="tel" name="contact" placeholder="Contact number" required/>
+                  <input type="text" name="gender" placeholder="Gender" required/>
+  
+                  <select id="timeslot" name="timeslot" multiple style="height: 50px;"required>
+                    <option value="AN1" disabled> Select Time Slots </option>
+                    <option value="10am-11am">10am-11am</option>
+                    <option value="11am-12pm">11am-12pm</option>
+                    <option value="12pm-1pm">12pm-1pm</option>
+                    <option value="1pm-2pm">1pm-2pm</option>
+                    <option value="2pm-3pm">2pm-3pm</option>
+                    <option value="3pm-4pm">3pm-4pm</option>
+                    <option value="4pm-5pm">4pm-5pm</option>
+                    <option value="5pm-6pm">5pm-6pm</option>
+                                      
+                </select> 
+                  
+                  
+                  <input input type="file" name="profile"placeholder="Profile Photo"required>
+                  <input type="email" name="email" placeholder="Email Id" required/>
+                  <button type="submit" style="margin: 20px 60px;" class="button">Submit</button>
+                  
+              
+          </div>
+          <div class="form-container login-container">
+             
+                  <h1 style="margin: 20px 0px 0 50px;">Details</h1>
+                  <input type="text" name="name" placeholder="Full Name" required/>
+                  <input type="text" name="specialization" placeholder="Specialization" required/>
+                  <input type="text" name="qualification" placeholder="Qualification" required/>
+                  
+                  <input input type="file" name="qual_file" placeholder="Kindly upload necessary document."required>
+                
+                    <select name="exp" multiple style="height: 50px;"required>
+                    <option value="AN1" disabled> Select Experience</option>
+                    <option value="1 year">1 year</option>
+                    <option value="2 year">2 years</option>
+                    <option value="3 year">3 years</option>
+                    <option value="3+ year">3+ years</option>
+                                    
+                </select> 
+                  <!-- <a href="#">Forgot your password?</a>
+                  <button style="margin-top: 40px;" class="button">Login</button> -->
+              
+          </div>
+        </form>
+          <div class="overlay-container">
+              <div class="overlay">
+                  <div class="overlay-panel overlay-left">
+                    <img src="images/doctor1.png" style="border-radius: 50px; width:250px; height:210px; margin-bottom: 50px;">
+                      <button class="button2" id="login">Back</button>
+                  </div>
+                  <div class="overlay-panel overlay-right">
+                      
+                      <img src="images/doctor.png" style="border-radius: 50px; width:200px; height:210px; margin-bottom: 50px;">
+                      
+                      <button class="button2" id="signUp">Next</button>
+                  </div>
+                  <!-- <script src="app.js"></script> -->
+              </div>
+          </div>
+      </div>
+
+      <script>
+          const signUpButton = document.getElementById('signUp');
+          const loginButton = document.getElementById('login');
+          const container = document.getElementById('container');
+
+          signUpButton.addEventListener('click', () => {
+          container.classList.add("right-panel-active");
+          });
+
+          loginButton.addEventListener('click', () => {
+              container.classList.remove("right-panel-active");
+          });
+      </script>
+
+  </div>
+
+
+  </body>
+</html>
