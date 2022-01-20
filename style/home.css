@@ -1,0 +1,226 @@
+.head_img1{
+    margin:1% 6%;
+    
+}
+.head_cont1{
+    margin-left:30%;
+    margin-top:-62px;
+    
+}
+.head_a{
+    text-decoration: none;
+    padding:4%;
+    font-size: 25px;
+    color:black;
+    
+}
+.head_log{
+    float:right;
+    margin-right:60px;
+    margin-top:-45px;
+    font-size: 20px;
+    background-color:#7267CB;
+    border-radius: 50px;
+    padding:10px;
+    margin-bottom: 2%;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+   
+}
+.head_log a{
+    color:black;
+}
+.car1{
+        width:1530px;
+        height:660px;
+      }
+
+      .p1{
+        margin: 50px;
+        text-align: justify;
+        
+      }
+
+      .pic{
+        width:320px;
+        height:240px;
+        
+      }
+      /*circl*/
+      .c{
+     width:3000px;
+     margin-right:-50px;
+     
+  }
+  .p {
+      margin-top:2%;
+      margin-left:28%;
+
+  }
+  .specialities{
+    margin-top:4%;
+    margin-left:40%;
+    font-weight: bolder;
+  }
+  .btn{
+    border: none;
+}
+button-solid:focus {
+    border: none;
+    outline: none;
+}
+.first{
+    font-size:30px;
+    border-radius: 50px;
+    color:white;
+    padding:10px;
+    background-color:#980F5A;
+   
+}
+
+.second{
+    font-size:25px;
+    color:brown;
+    
+}
+.c:hover{
+           background-color: #980F5A;
+           color:white;
+       }
+
+/*animation*/
+.animated {
+           
+            background-repeat: no-repeat;
+            background-position: left top;
+            padding-top:95px;
+        
+            -webkit-animation-duration: 10s;
+            animation-duration: 10s;
+            -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+         }
+         
+         @-webkit-keyframes fadeInLeft {
+            0% {
+               opacity: 0;
+               -webkit-transform: translateX(-20px);
+               transform:translateX(-20px)
+            }
+            100% {
+               opacity: 1;
+               -webkit-transform: translateX(0);
+               transform:translateX(0)
+            }
+         }
+         
+         @keyframes fadeInLeft {
+            0% {
+               opacity: 0;
+               transform: translateX(-20px);
+            }
+            100% {
+               opacity: 1;
+               transform: translateX(0);
+            }
+         }
+         
+         .fadeInLeft {
+         -webkit-animation-name: fadeInLeft;
+         animation-name: fadeInLeft;
+         } 
+         /**/
+         .services{
+             font-size: 30px;
+             text-align: center;
+             font-weight:bolder ;
+             margin-left:5%;
+             margin-bottom: 3%;
+         }
+         .services_cont{
+             display: flex;
+            
+             margin-left:10%;
+         }
+         .one,.two,.th{
+        width:30%;
+height:250px;
+background-color:azure;
+border: 1px solid grey;
+         }
+       .serv_icon{
+           font-size:40px;
+           background-color: #E63E6D;
+           border-radius:5%;
+           margin: 10%;
+           padding:15px;
+           border:5px solid white;
+       }  
+       .services_cont h3{
+           margin-top: -5%;
+           margin-left:10%;
+           font-weight: bolder;
+           font-size: 20px;
+       }
+       .services_cont h6{
+        margin-left:10%;
+        margin-top: -5%;
+        font-size:16px;
+        padding-right:30px;
+       }
+       .one:hover{
+           background-color: #980F5A;
+           color:white;
+       }
+       .two:hover{
+           background-color: #980F5A;
+           color:white;
+       }
+       .th:hover{
+           background-color: #980F5A;
+           color:white;
+       }
+       .figures{
+           margin-top:3%;
+           height:250px;
+
+           background-color: #980F5A;
+       }
+
+       .figures button{
+       margin-left:10%;
+       }
+      
+       .fig{
+      
+        color:#980F5A; 
+        font-size:40px;
+        background-color:white; 
+        border-radius:5%;
+        margin-top:25%;
+        
+        padding:10px;
+        
+       }
+       .fig1{
+        margin-left:200%;
+       }
+       .figures h1{
+      
+        margin-top: -2%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: white;
+       }
+     
+       .figures p{
+        font-size:20px;
+       
+        margin-right: 20px;
+        margin-top:-2%;
+           color: white;
+       }
+      
+.footer{
+    margin-top: 25px;
+    width:100%;
+    background-color: black;
+    height:50px;

@@ -1,0 +1,30 @@
+.nav-link{
+    font-size: 16px;
+    color:white!important;
+    margin: 3px;
+    
+    }
+    .nav-link:hover {
+    border-bottom: 2px solid white;
+    }
+    .nav-link1:hover {
+        text-decoration: none;
+    }
+    
+    .navbar{
+        overflow: hidden;
+        position: fixed; 
+        top: 0; 
+        width: 100%;
+
+    }
+    @media only screen and (max-width: 1000px){
+    .nav-link:hover{
+    font-weight: 700;
+    position: relative;
+    border-bottom: none!important;
+    }
+    }
+    .clear{
+        clear: both;
+        }
